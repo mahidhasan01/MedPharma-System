@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="721.0" prefWidth="635.0" style="-fx-background-color: #EAF6FB;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmafx.EmployeeDashBoardController">
+   <children>
+      <Text layoutX="62.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: &quot;Bookman Old Style&quot;;" text="Employee DashBoard">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="62.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: &quot;Bookman Old Style&quot;;" text="Welcome, Employee !" wrappingWidth="188.2308349609375">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="AddItem" layoutX="62.0" layoutY="206.0" mnemonicParsing="false" onAction="#AddItem" prefHeight="28.0" prefWidth="179.0" style="-fx-background-color: #164C63; -fx-text-fill: white; -fx-font-family: &quot;Bookman Old Style&quot;; -fx-background-radius: 8;" text=" Add Item" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="ViewAcceptOrder" layoutX="62.0" layoutY="247.0" mnemonicParsing="false" onAction="#ViewAcceptOrder" prefHeight="28.0" prefWidth="179.0" style="-fx-background-color: #164C63; -fx-text-fill: white; -fx-font-family: &quot;Bookman Old Style&quot;; -fx-background-radius: 8;" text=" View &amp; Accept Orders" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="FindExpMed" layoutX="62.0" layoutY="287.0" mnemonicParsing="false" onAction="#FindExpMed" prefHeight="28.0" prefWidth="179.0" style="-fx-background-color: #164C63; -fx-text-fill: white; -fx-font-family: &quot;Bookman Old Style&quot;; -fx-background-radius: 8;" text="Find Expired Medicine" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="LogOut" layoutX="62.0" layoutY="326.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="28.0" prefWidth="179.0" style="-fx-background-color: #164C63; -fx-text-fill: white; -fx-font-family: &quot;Bookman Old Style&quot;; -fx-background-radius: 8;" text="  Log Out" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <VBox layoutX="261.0" layoutY="206.0" prefHeight="374.0" prefWidth="338.0" spacing="10.0" style="-fx-background-color: #FFF7EE; -fx-background-radius: 18; -fx-border-color: #164C63;; -fx-border-width: 4; -fx-border-radius: 18;" AnchorPane.rightAnchor="35.60000000000002">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <ComboBox fx:id="Type" prefHeight="26.0" prefWidth="300.0" promptText="Type" />
+            <ComboBox fx:id="Manufacturer" prefHeight="26.0" prefWidth="291.0" promptText="Manufacturer" />
+            <TextField fx:id="Name" promptText="Name...." style="-fx-font-family: 'Bookman Old Style';;" />
+            <ListView fx:id="SuggestionBox1" onEditStart="#Search" prefHeight="200.0" prefWidth="200.0" style="-fx-font-family: &quot;Bookman Old Style&quot;;; -fx-font-size: 14; -fx-background-radius: 10; -fx-control-inner-background: #FFF7EE;;" />
+         </children>
+      </VBox>
+      <Text layoutX="261.0" layoutY="612.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: &quot;Bookman Old Style&quot;;" text="Clicking a Button will open a Sub Form/Window" wrappingWidth="270.6308288574219">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

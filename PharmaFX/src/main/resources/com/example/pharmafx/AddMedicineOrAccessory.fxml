@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="836.0" prefWidth="800.0" style="-fx-background-color: #E3F2FD;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmafx.AddMedicineOrAccessoryController">
+   <children>
+      <VBox alignment="CENTER" layoutX="100" layoutY="20" prefWidth="600" spacing="20" />
+      <VBox layoutX="100.0" layoutY="100.0" prefWidth="600" spacing="10" style="-fx-background-color: #FFFBE6; -fx-padding: 20; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #1A3C57;">
+         <children>
+            <Label alignment="CENTER" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Medicine Details" />
+            <GridPane hgap="10" vgap="10">
+               <columnConstraints>
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+               </rowConstraints>
+               <children>
+                  <Label text="Medicine name:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                  <TextField fx:id="txtMedicineName" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                  <Label text="Manufacturer:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                  <TextField fx:id="txtManufacturerMed" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="Dose:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                  <TextField fx:id="txtDose" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="Unit:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                  <TextField fx:id="txtUnitMed" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="Unit Price:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                  <TextField fx:id="txtUnitPriceMed" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label text="Quantity:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                  <TextField fx:id="txtQuantityMed" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label text="Expiration Date:" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                  <DatePicker fx:id="dateExpiration" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+               </children>
+            </GridPane>
+            <Button fx:id="btnSubmitMed" alignment="CENTER_RIGHT" onAction="#onSubmitMedicine" style="-fx-background-color: #1A3C57; -fx-text-fill: white; -fx-background-radius: 5;" text="Submit" />
+         </children>
+      </VBox>
+      <VBox layoutX="102.0" layoutY="478.0" prefWidth="600" spacing="10" style="-fx-background-color: #FFFBE6; -fx-padding: 20; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #1A3C57;">
+         <children>
+            <Label alignment="CENTER" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Accessory Details" />
+            <GridPane hgap="10" vgap="10">
+               <columnConstraints>
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+               </rowConstraints>
+               <children>
+                  <Label text="Accessory Name:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                  <TextField fx:id="txtAccessoryName" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                  <Label text="Manufacturer:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                  <TextField fx:id="txtManufacturerAcc" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="Model No:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                  <TextField fx:id="txtModelNo" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="Unit Price:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                  <TextField fx:id="txtUnitPriceAcc" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="Quantity:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                  <TextField fx:id="txtQuantityAcc" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
+            <Button fx:id="btnSubmitAcc" alignment="CENTER_RIGHT" onAction="#onSubmitAccessory" style="-fx-background-color: #1A3C57; -fx-text-fill: white; -fx-background-radius: 5;" text="Submit" />
+         </children>
+      </VBox>
+      <Button fx:id="btnBack" layoutX="111.0" layoutY="785.0" onAction="#onBack" style="-fx-background-color: #1A3C57; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10;" text="Back" />
+      <Label alignment="CENTER" layoutX="313.0" layoutY="47.0" prefHeight="35.0" prefWidth="154.0" style="-fx-background-color: #1A3C57; -fx-border-radius: 5;" text="ADD ITEM" textFill="#fcfafa">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

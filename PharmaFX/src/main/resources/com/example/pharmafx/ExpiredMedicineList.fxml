@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="767.0" prefWidth="600.0" style="-fx-background-color: #EAF6FB;;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmafx.ExpiredMedicineListController">
+   <children>
+      <VBox layoutX="18.0" layoutY="16.0" prefHeight="724.0" prefWidth="564.0" spacing="20.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="66.0" prefWidth="534.0" style="-fx-background-color: #2F8A4E; -fx-text-fill: White; -fx-font-size: 32; -fx-font-weight: Bold; -fx-background-radius: 10;" text="Expired Medicine List">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <TableView fx:id="expiredTable" prefHeight="568.0" prefWidth="543.0" style="-fx-border-color: #D6DDE5;">
+              <columns>
+                <TableColumn fx:id="colName" prefWidth="84.79998624324799" style="-fx-alignment: center;" text="Name" />
+                <TableColumn fx:id="colManufacturer" prefWidth="88.79993438720703" style="-fx-alignment: center;" text=" Manufacturer" />
+                  <TableColumn fx:id="colDose" prefWidth="56.800048828125" style="-fx-alignment: center;" text="Dose" />
+                  <TableColumn fx:id="colUnit" prefWidth="71.99993896484375" style="-fx-alignment: center;" text="Unit" />
+                  <TableColumn fx:id="colUnitPrice" prefWidth="74.4000244140625" style="-fx-alignment: center;" text="Unit Price" />
+                  <TableColumn fx:id="colQuantity" prefWidth="63.199951171875" style="-fx-alignment: center;" text="Quantity" />
+                  <TableColumn fx:id="colExpiryDate" prefWidth="103.99996948242188" style="-fx-alignment: center;" text="Expiry Date" />
+              </columns>
+            </TableView>
+            <Button fx:id="backBtn" mnemonicParsing="false" onAction="#goBack" prefHeight="44.0" prefWidth="82.0" style="-fx-background-color: #11374A; -fx-text-fill: White; -fx-font-weight: bold; -fx-background-radius: 10;" text="Back">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
